@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="maindiv">
+      <div class="innerForm">
+        <form class="main" id="frm" onsubmit="myFunction(event)">
+          <h1>Registration Form</h1>
+          <input type="text" placeholder="Name" id="name" />
+          <input type="password" placeholder="Password" id="password" />
+          <input type="text" placeholder="Email" id="email" />
+          <input type="number" placeholder="Phone Number" id="phone" />
+          <input type="text" placeholder="Address" id="address" />
+          <input type="date" placeholder="DOB" id="dob" />
+          <div class="inner" id="inner">
+            <input
+              type="radio"
+              placeholder="Sex"
+              name="sex"
+              id="radio"
+              value="male"
+            />
+            <label for="Male">Male</label>
+            <input type="radio" placeholder="Sex" name="sex" value="female" />
+            <label for="Female">Female</label>
+          </div>
+          <div class="checkbo">
+            <p>Languages Known</p>
+            <div class="inch" id="chek">
+              <input type="checkbox" name="lang" value="english" />
+              <label for="english">English</label>
+            </div>
+            <div class="inch" id="chek">
+              <input type="checkbox" name="lang" value="telugu" />
+              <label for="telugu">Telugu</label>
+            </div>
+            <div class="inch" id="chek">
+              <input type="checkbox" name="lang" value="hindi" />
+              <label for="hindi">Hindi</label>
+            </div>
+            <div class="inch" id="chek">
+              <input type="checkbox" name="lang" value="tamil" />
+              <label for="tamil">Tamil</label>
+            </div>
+          </div>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <div class="s">
+        <div class="in">
+          <h3>Output</h3>
+          <p id="demo"></p>
+          <p id="demo1"></p>
+          <p id="demo2"></p>
+          <p id="demo3"></p>
+          <p id="demo4"></p>
+          <p id="demo5"></p>
+          <p id="demo6"></p>
+          <p id="demo7"></p>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
